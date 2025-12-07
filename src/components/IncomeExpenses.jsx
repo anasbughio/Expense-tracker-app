@@ -1,0 +1,18 @@
+import React from 'react';
+
+const IncomeExpenses = ({ income, expense }) => {
+  return (
+    <div className="inc-exp-container">
+      <div>
+        <h4>INCOME</h4>
+        <p className="money plus">${income.toFixed(2)}</p>
+      </div>
+      <div>
+        <h4>EXPENSE</h4>
+        <p className="money minus">${Math.abs(expense).toFixed(2)}</p>
+      </div>
+    </div>
+  );
+};
+
+export default IncomeExpenses;
